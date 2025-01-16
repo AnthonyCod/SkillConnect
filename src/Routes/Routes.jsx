@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import React from "react";
+
 // Importación de páginas
 import Quizz from "../Components/Quizz";
 import Beca from "../Pages/Beca";
@@ -25,11 +26,12 @@ import Pago from "../Pages/Pago";
 
 export default function AppRoutes() {
   return (
-    <Router>
+    // ✅ Agregado el basename para GitHub Pages
+    <Router basename="/SkillConnect">
       <Routes>
         {/* Redirección por defecto */}
         <Route path="/" element={<Navigate to="/Young" replace />} />
-        
+
         <Route path="/cursos" element={<Features />} />
         <Route path="/planes" element={<Planes />} />
         <Route path="/Beca" element={<Beca />} />
