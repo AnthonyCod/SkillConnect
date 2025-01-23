@@ -82,7 +82,6 @@ export default function RouteDetails() {
         <p className={`${styles.descriptionSize} mb-6`}>{route.description}</p>
         <button
           className={`px-6 py-3 rounded-lg ${styles.buttonColor}`}
-          onClick={() => navigate("/inicio")}
         >
           Empieza ya
         </button>
